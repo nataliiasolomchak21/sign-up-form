@@ -1,158 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
 }
 
 body {
-    background-image: url('images/bg-intro-mobile.png');
-    background-color: var(--primary-color-red);
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: var(--primary-color-red);
 }
 
 :root {
-    --primary-color-red: hsl(0, 100%, 74%);
-    --primary-color-green: hsl(154, 59%, 51%);
-    --accent-color: hsl(248, 32%, 49%);
-    --neutral-blue: hsl(249, 10%, 26%); 
-    --neutral-gray-blue: hsl(246, 25%, 77%);
-    --text-color: white; 
+  --primary-color-red: hsl(0, 100%, 74%);
+  --primary-color-green: hsl(154, 59%, 51%);
+  --accent-color: hsl(248, 32%, 49%);
+  --neutral-blue: hsl(249, 10%, 26%);
+  --neutral-gray-blue: hsl(246, 25%, 77%);
+  --text-color: white;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem;
 }
 
 .text-box {
-    text-align: center;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .text-box h1 {
-    color: var(--text-color);
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 1.5rem;
 }
 
 .text-box p {
-    color: var(--text-color);
-    font-size: 16px;
-    margin-bottom: 2rem;
+  color: var(--text-color);
+  font-size: 16px;
+  margin-bottom: 2rem;
+  min-width: 20rem;
 }
 
 .form-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .free-trial {
-    background-color: var(--accent-color);
-    border-radius: .5rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--accent-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.15);
+  padding: 1rem;
 }
 
 .free-trial h2 {
-    font-size: 14px;
-    color: var(--text-color);
-    padding: 1rem;
-    font-weight: 400;
-    max-width: 15rem;
+  font-size: 13px;
+  color: var(--text-color);
+  font-weight: 400;
+  max-width: 10rem;
 }
 
 .free-trial span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .form {
-    background-color: var(--text-color);
-    padding: 1rem;
-    border-radius: .5rem;
+  background-color: var(--text-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.15);
 }
 
-.form input, 
+.form input,
 .form .claim-btn {
-    width: 100%;
-    border-radius: .5rem;
-    border: .5px solid #b4aeae;
-    margin-bottom: .6rem;
-    color: var(--neutral-blue);
-    font-weight: 600;
-    padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0.5px solid #b4aeae;
+  margin-bottom: 0.7rem;
+  color: var(--neutral-blue);
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.form input {
+  padding: 1.5rem;
+}
+
+.form input:focus {
+  border-color: var(--neutral-blue);
+}
+
+.invalid-feedback {
+  text-align: right;
+  margin-top: -0.7rem;
+  margin-bottom: 1rem;
+  font-size: 11px;
 }
 
 .form .claim-btn {
-    color: var(--text-color);
-    border: 1px solid var(--primary-color-green);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: var(--primary-color-green);
-    font-size: 16px;
-    cursor: pointer;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color-green);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: var(--primary-color-green);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0.6rem;
+  box-shadow: 0 3px 0 1px var(--primary-color-green);
+}
+
+.form .claim-btn:hover {
+  background-color: hsl(154, 78%, 68%);
+  box-shadow: 0 4px 0 rgb(106, 221, 172);
 }
 
 .terms-conditions {
-    color: var(--neutral-gray-blue);
-    font-size: 10px;
-    max-width: 14rem;
-    margin-inline: auto;
+  color: var(--neutral-gray-blue);
+  font-size: 10px;
+  margin-inline: auto;
 }
 
 .terms-conditions span {
-    color: var(--primary-color-red);
-    font-weight: 700;
+  color: var(--primary-color-red);
+  font-weight: 700;
 }
 
-@media (min-width: 765px) {
-    .main {
-        display: flex;
-        flex-direction: row;
-        padding: 5rem;
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-    }
+@media (min-width: 1240px) {
+  body {
+    background-image: url("/images/bg-intro-desktop.png");
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: row;
+    padding: 6rem;
+    margin-top: 2rem;
+  }
 
-    .text-box h1 {
-        font-size: 50px;
-        text-align: left;
-        max-width: 30rem;
-    }
-    
-    .text-box p {
-        text-align: left;
-        max-width: 35rem;
-    }
+  .text-box h1 {
+    font-size: 45px;
+    text-align: left;
+    max-width: 30rem;
+  }
 
-    .form-box {
-        width: 40%;
-    }
+  .text-box p {
+    text-align: left;
+    max-width: 35rem;
+  }
 
-    .form {
-        padding: 2rem;
-    }
+  .form-box {
+    width: 40%;
+  }
 
-    .free-trial h2 {
-        max-width: 20rem;
-    }
+  .free-trial {
+    height: 60px;
+  }
 
-    .terms-conditions p {
-        font-size: 16px;
-    }
+  .free-trial h2 {
+    font-size: 16px;
+    min-width: 30rem;
+    margin-top: 0.8rem;
+  }
+
+  .form {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .form input {
+    padding: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .invalid-feedback {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  .free-trial h2 {
+    max-width: 20rem;
+  }
+
+  .terms-conditions p {
+    font-size: 30px;
+  }
 }
-
