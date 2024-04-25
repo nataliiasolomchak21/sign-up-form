@@ -146,9 +146,9 @@ body {
 
 @media (min-width: 1240px) {
   body {
-    background-image: url("/images/bg-intro-desktop.png");
+    background-image: url("images/bg-intro-desktop.png");
   }
-  
+
   .main {
     display: flex;
     flex-direction: row;
